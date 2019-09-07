@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let defaults = UserDefaults.standard
+    let TIP_PERCENTAGE = "TIP_PERCENTAGE"
+    let tipPercentages = [0.15, 0.18, 0.2]
+    
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var billField: UITextField!
@@ -16,7 +20,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let tipValueIndex = defaults.integer(forKey: TIP_PERCENTAGE)
+        
+        tipControl.selectedSegmentIndex = tipValueIndex
+        updateTip()
     }
 
     @IBAction func onTap(_ sender: Any) {
@@ -24,9 +34,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func calculateTip(_ sender: Any) {
+        updateTip()
+    }
+    
+    private func updateTip () {
         let bill = Double(billField.text!) ?? 0
-        
-        let tipPercentages = [0.15, 0.18, 0.2]
         
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
