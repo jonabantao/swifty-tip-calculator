@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6911FC723243A150008D060 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6911FC623243A150008D060 /* SettingsViewController.swift */; };
 		F69300002324206D00CD9E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F693FFFF2324206D00CD9E2E /* Assets.xcassets */; };
 		F69300032324206D00CD9E2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F69300012324206D00CD9E2E /* LaunchScreen.storyboard */; };
 		F693FFF92324206D00CD9E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F693FFF82324206D00CD9E2E /* AppDelegate.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6911FC623243A150008D060 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F69300022324206D00CD9E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F69300042324206D00CD9E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F693FFF52324206D00CD9E2E /* SwiftyTipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyTipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +59,7 @@
 				F693FFF82324206D00CD9E2E /* AppDelegate.swift */,
 				F693FFFA2324206D00CD9E2E /* ViewController.swift */,
 				F693FFFC2324206D00CD9E2E /* Main.storyboard */,
+				F6911FC623243A150008D060 /* SettingsViewController.swift */,
 				F693FFFF2324206D00CD9E2E /* Assets.xcassets */,
 				F69300012324206D00CD9E2E /* LaunchScreen.storyboard */,
 				F69300042324206D00CD9E2E /* Info.plist */,
@@ -137,6 +140,7 @@
 			files = (
 				F693FFFB2324206D00CD9E2E /* ViewController.swift in Sources */,
 				F693FFF92324206D00CD9E2E /* AppDelegate.swift in Sources */,
+				F6911FC723243A150008D060 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
