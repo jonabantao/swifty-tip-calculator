@@ -4,7 +4,7 @@
 
 Submitted by: **Jonathan Abantao**
 
-Time spent: **2** hours spent in total
+Time spent: **4** hours spent in total
 
 ## User Stories
 
@@ -13,7 +13,7 @@ The following **required** functionality is complete:
 * [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
 
 The following **optional** features are implemented:
-* [ ] Settings page to change the default tip percentage.
+* [x] Settings page to change the default tip percentage.
 * [ ] UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
@@ -27,7 +27,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/OJGZstw.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/7Srhtxo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [RecordIt](https://recordit.co/).
 
@@ -35,7 +35,9 @@ GIF created with [RecordIt](https://recordit.co/).
 
 *Describe any challenges encountered while building the app.*
 
-Currently, no challenges presented in the prework. Will continue to tackle the optional parts if time permits in the future.
+Thinking how to keep my code DRY when setting the tip settings. Maybe create a class to wrap around the `UserDefaults`? Not sure if best practice as of writing.
+
+Will continue to tackle additional optional parts if time permits in the future.
 
 ## License
 
